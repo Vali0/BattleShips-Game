@@ -1,0 +1,7 @@
+extends shared/layout
+block main-content
+    pre !{board}
+    form(method="post")
+        label Enter coordinate (row col) e.g. A 5:
+        input(type="text" autofocus="autofocus" name="coordinates")
+        input(type="submit" value="Guess")
